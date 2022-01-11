@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'circe';
+  font-family: "circe";
   src: url(../font/circe-light.ttf);
-  font-family: 'Plumb';
+  font-family: "Plumb";
   src: url(../font/plumb-black.otf);
 }
 body {
   color: #fff;
-  font-family: 'circe';
+  font-family: "circe";
   font-size: 16px;
   margin: 0;
 }
@@ -102,19 +102,19 @@ li > .lenth {
   color: inherit;
 }
 .h1_expo {
-  font-family: 'Plumb';
+  font-family: "Plumb";
   font-weight: 400;
   font-size: 64px;
   line-height: 1.2em;
   text-transform: uppercase;
 }
 .p_expo {
-  font-family: 'circe';
+  font-family: "circe";
   font-size: 24px;
   line-height: 1.4em;
 }
 .complect_expo {
-  font-family: 'circe';
+  font-family: "circe";
   display: flex;
 }
 .complect_p {
@@ -132,13 +132,19 @@ li > .lenth {
   width: 50%;
   padding-bottom: 30px;
 }
+@media (max-width: 450px) {
+  .fore_block_header {
+    margin: 0;
+    padding: 0;
+  }
+}
 .space-between {
   display: flex;
   justify-content: space-between;
 }
 
 .color_div_p {
-  font-family: 'circe';
+  font-family: "circe";
   font-weight: normal;
   font-size: 14px;
   line-height: 1.35em;
@@ -206,7 +212,7 @@ li > .lenth {
 .nav_burger li {
   padding: 20px 10px 0px 0px;
   font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
 
@@ -235,18 +241,17 @@ ul img {
 }
 
 .menu_items {
-  margin-top: 60px;
-  margin-bottom: 75px;
+  margin: 60px auto 75px auto;
 }
 .items_h3 {
-  font-family: 'Plumb';
+  font-family: "Plumb";
   font-size: 30px;
   line-height: 1.3em;
   padding-bottom: 10px;
   letter-spacing: -0.01em;
 }
 .items_p {
-  font-family: 'circe';
+  font-family: "circe";
   font-size: 16px;
   line-height: 1.35em;
   color: #ffffff;
@@ -294,7 +299,7 @@ ul img {
   padding-bottom: 5px;
 }
 .h3_one_block {
-  font-family: 'Plumb';
+  font-family: "Plumb";
   font-weight: 500;
   font-size: 21px;
   line-height: 1.3em;
@@ -338,20 +343,29 @@ ul img {
   max-height: 120px;
 }
 .p_news {
-  font-family: 'circe';
-  font-size: 16px;
+  font-family: "circe";
+  font-size: 13px;
   line-height: 1.35em;
   color: #f6404f;
   padding-left: 30px;
+  margin-top: 5px;
 }
 .p1_news {
   padding-left: 30px;
   margin-right: 100px;
+  font-size: 14px;
+}
+@media (min-width: 1000px) {
+  .p1_news,
+  .p_news {
+    min-width: 100px;
+  }
 }
 /*  footer*/
 footer {
   width: 100%;
   background: #30bcc9;
+  padding: 0 15px;
 }
 .flex_footer {
   display: flex;
@@ -363,7 +377,7 @@ footer {
   margin-right: 50px;
 }
 .items_footer {
-  font-family: 'Plumb';
+  font-family: "Plumb";
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -414,7 +428,7 @@ footer {
     width: 90%;
   }
   .color_div {
-    width: 25%;
+    width: 30%;
   }
   footer .container {
     width: 95%;
@@ -467,11 +481,11 @@ footer {
     display: block;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1050px) {
   .news {
     width: 100%;
   }
-  #main-input{
+  #main-input {
     display: none;
   }
   .menu_burger {
@@ -620,9 +634,6 @@ footer {
   .header_border {
     margin-bottom: 150px;
   }
-  .fore_block_header {
-    margin-top: 20px;
-  }
   .complect_p {
     font-size: 16px;
   }
@@ -768,6 +779,9 @@ footer {
   footer .container {
     width: 100%;
   }
+  .fore_block_header {
+    justify-content: center;
+  }
   .items_footer {
     font-size: 9px;
   }
@@ -799,5 +813,8 @@ footer {
   }
   .items_p {
     font-size: 8px;
+  }
+  .color_div {
+    min-width: 130px;
   }
 }
