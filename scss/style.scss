@@ -22,6 +22,12 @@ a {
   text-decoration: none;
   color: #fff;
 }
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #faf3e3;
+}
 .header {
   width: 100%;
   position: absolute;
@@ -521,6 +527,7 @@ a {
 }
 /* footer */
 .footer {
+  margin-top: auto;
   background-color: #30bcc9;
   width: 100%;
   padding: 20px 0 70px 0;
