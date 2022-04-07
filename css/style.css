@@ -360,14 +360,7 @@ a {
   color: #000;
   max-width: 326px;
 }
-.yellow-section__wrapper .card__wrapper__item:last-child {
-  flex-grow: 1;
-}
-@media (max-width: 1200px) {
-  .yellow-section__wrapper .card__wrapper__item:last-child {
-    margin-left: 115px;
-  }
-}
+
 @media (max-width: 991px) {
   .yellow-section__wrapper .card__wrapper__item:last-child {
     flex-grow: 0;
